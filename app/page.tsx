@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col lg:flex-row">
+    <main className="flex flex-col lg:flex-row pt-16">
       <div className="lg:border-r border-r-solid border-color-black h-vh lg:w-1/4 text-center p-8">
         <Image
           className="block rounded-full max-w-full mx-auto"
@@ -30,10 +30,10 @@ export default function Home() {
         <h3 className="text-xl">Expertise</h3>
         <ul>
           <li>Python (Django, Flask, scipy)</li>
-          <li>Javascript (React, Node, Vue, jQuery)</li>
-          <li>Modern software tooling: Docker, Git, CI/CD</li>
+          <li>Javascript (React, React-Native/Expo, Nodejs, Vue, jQuery)</li>
+          <li>Modern software tooling (Docker, Git, CI/CD)</li>
           <li>Web Development (HTML, CSS, Tailwind, Less, SASS)</li>
-          <li>Library development in Python, C/C++, C#</li>
+          <li>Library development (in Python, C/C++, C#)</li>
           <li>Cybersecurity (Security+)</li>
         </ul>
 
