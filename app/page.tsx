@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex flex-col lg:flex-row">
-      <div className="lg:border-right-solid border-color-black lg:w-1/4 text-center p-8">
+      <div className="lg:border-r border-r-solid border-color-black h-vh lg:w-1/4 text-center p-8">
         <Image
           className="block rounded-full max-w-full mx-auto"
           alt=""
