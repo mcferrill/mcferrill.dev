@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-ul {
-  list-style: disc;
-  padding-left: 1.5rem;
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }

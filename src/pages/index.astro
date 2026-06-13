@@ -3,113 +3,187 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <main class="flex flex-col lg:flex-row pt-16">
-    <div class="lg:border-r border-r-2 border-solid border-gray-300 h-screen lg:w-1/4 text-center p-8">
+  <main class="max-w-6xl mx-auto min-h-screen lg:flex">
+    <!-- Sidebar -->
+    <aside
+      class="bg-stone-50 dark:bg-stone-900/50 lg:min-h-screen lg:w-80 lg:shrink-0 lg:sticky lg:top-0 text-center p-8 lg:p-10 flex flex-col items-center"
+    >
       <img
-        class="block rounded-full max-w-full mx-auto"
+        class="block rounded-full mx-auto w-32 h-32 lg:w-56 lg:h-56 object-cover shadow-lg ring-2 ring-teal-100 dark:ring-teal-900 transition-transform hover:scale-[1.02]"
         alt=""
         width={250}
         height={250}
         src="/profile.jpg"
       />
-      <h3 class="text-center text-lg mt-2">Micah Ferrill</h3>
-      <h1 class="text-3xl mt-8 mb-2">Hi!</h1>
-      <p>I&apos;m Micah, and I make software for desktop, web, and mobile.</p>
-      <div class="flex flex-row justify-between w-48 max-w-full my-8 mx-auto">
-        <a href="https://github.com/mcferrill" title="GitHub">
-          <img width={32} height={32} alt="Github" src="/github.svg" />
+      <h3 class="text-lg font-semibold mt-4">Micah Ferrill</h3>
+      <h1 class="text-3xl lg:text-4xl font-bold mt-6 mb-3">Hi!</h1>
+      <p class="text-stone-600 dark:text-stone-400 leading-relaxed">
+        I&apos;m Micah, and I make software for desktop, web, and mobile.
+      </p>
+      <div class="flex flex-row justify-between w-48 max-w-full my-8">
+        <a
+          href="https://github.com/mcferrill"
+          title="GitHub"
+          class="text-stone-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+        >
+          <img
+            width={32}
+            height={32}
+            alt="Github"
+            src="/github.svg"
+            class="opacity-70 hover:opacity-100 dark:invert transition-opacity"
+          />
         </a>
-        <a href="https://www.linkedin.com/in/mcferrill/" title="LinkedIn">
-          <img width={32} height={32} alt="LinkedIn" src="/linkedin.svg" />
+        <a
+          href="https://www.linkedin.com/in/mcferrill/"
+          title="LinkedIn"
+          class="text-stone-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+        >
+          <img
+            width={32}
+            height={32}
+            alt="LinkedIn"
+            src="/linkedin.svg"
+            class="opacity-70 hover:opacity-100 dark:invert transition-opacity"
+          />
         </a>
-        <a href="https://twitter.com/mcferrill" title="Twitter">
-          <img width={32} height={32} alt="Twitter" src="/twitter.svg" />
+        <a
+          href="https://twitter.com/mcferrill"
+          title="Twitter"
+          class="text-stone-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+        >
+          <img
+            width={32}
+            height={32}
+            alt="Twitter"
+            src="/twitter.svg"
+            class="opacity-70 hover:opacity-100 dark:invert transition-opacity"
+          />
         </a>
       </div>
-    </div>
-    <div class="justify-between lg:w-3/4 p-8">
-      <h3 class="text-xl">Expertise</h3>
-      <ul>
-        <li>Python (Django, Flask, scipy)</li>
-        <li>Javascript (React, React-Native/Expo, Nodejs, Vue, jQuery)</li>
-        <li>Modern software tooling (Docker, Git, CI/CD)</li>
-        <li>Web Development (HTML, CSS, Tailwind, Less, SASS)</li>
-        <li>Library development (in Python, C/C++, C#)</li>
-        <li>Cybersecurity (Security+)</li>
-      </ul>
+    </aside>
 
-      <h3 class="text-xl mt-8">Relevant Work History</h3>
-      <h4 class="font-bold">Software Engineer @ FiveQ</h4>
-      <em>2022 - present</em>
-      <ul class="mt-2">
-        <li>
-          Standardized several high-traffic Django sites to use pdm for
-          dependency management.
-        </li>
-        <li>
-          Led a department restructuring to emphasize small, cross-functional
-          teams.
-        </li>
-        <li>
-          Rewrote frontend apps for an internet radio service from proprietary
-          javascript to Remix.
-        </li>
-        <li>Rewrote and updated several mobile apps in React Native/Expo.</li>
-      </ul>
+    <!-- Content -->
+    <div class="flex-1 p-8 lg:p-12 space-y-12">
 
-      <h4 class="mt-4 font-bold">
-        Software Engineer @ Avionics Test and Analysis Corporation
-      </h4>
-      <em>2010 - 2022</em>
-      <ul class="mt-2">
-        <li>
-          Built Visual Studio Code plugin for a telemetry configuration format
-          (TMATS).
-        </li>
-        <li>
-          Developed software to simulate F-16 pilot interface for lab testing
-          missile prototypes.
-        </li>
-        <li>Served as Security Manager for classified systems.</li>
-        <li>
-          Developed open-source libraries and tools for parsing binary data in
-          Python and C.
-        </li>
-        <li>Wrote weather data visualization tool for C5 radar logs.</li>
-        <li>
-          Rewrote and customized QML (Qt) and Javascript code for F-16 test
-          program.
-        </li>
-        <li>
-          Containerized multiple legacy and prototype software applications.
-        </li>
-        <li>
-          Presented several technical papers at industry conferences on
-          open-source software and containerization.
-        </li>
-      </ul>
-      <h4 class="mt-4 font-bold">
-        Independent Full Stack Developer & Author
-      </h4>
-      <em>2005 - Present</em>
-      <ul class="mt-2">
-        <li>
-          Built various new and updated websites for direct contracts and web
-          firms.
-        </li>
-        <li>
-          Wrote and consulted on multiple articles including one published on
-          linux.com and a book on android development with python.
-        </li>
-        <li>
-          Developed neighborhood watch software to deliver law enforcement
-          alerts via text message (SMS).
-        </li>
-        <li>
-          Developed iPad app for building floorplan layouts for print services
-          company.
-        </li>
-      </ul>
+      <!-- Expertise -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-teal-600 dark:text-teal-400">
+          Expertise
+        </h2>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+            Python (Django, Flask, scipy)
+          </span>
+          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+            Javascript (React, React-Native/Expo, Nodejs, Vue, jQuery)
+          </span>
+          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+            Modern software tooling (Docker, Git, CI/CD)
+          </span>
+          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+            Web Development (HTML, CSS, Tailwind, Less, SASS)
+          </span>
+          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+            Library development (in Python, C/C++, C#)
+          </span>
+          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+            Cybersecurity (Security+)
+          </span>
+        </div>
+      </section>
+
+      <!-- Work History -->
+      <section>
+        <h2 class="text-2xl font-bold mb-6 text-teal-600 dark:text-teal-400">
+          Relevant Work History
+        </h2>
+        <div class="space-y-6">
+
+          <!-- FiveQ -->
+          <div class="bg-white dark:bg-stone-800/50 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700/50 p-6 border-l-4 border-l-teal-500 dark:border-l-teal-400">
+            <h3 class="font-bold text-lg">Software Engineer @ FiveQ</h3>
+            <p class="text-sm text-stone-500 dark:text-stone-400 mt-1">2022 - present</p>
+            <ul class="mt-3 space-y-2 text-stone-700 dark:text-stone-300 list-disc pl-5">
+              <li>
+                Standardized several high-traffic Django sites to use pdm for
+                dependency management.
+              </li>
+              <li>
+                Led a department restructuring to emphasize small, cross-functional
+                teams.
+              </li>
+              <li>
+                Rewrote frontend apps for an internet radio service from proprietary
+                javascript to Remix.
+              </li>
+              <li>Rewrote and updated several mobile apps in React Native/Expo.</li>
+            </ul>
+          </div>
+
+          <!-- Avionics -->
+          <div class="bg-white dark:bg-stone-800/50 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700/50 p-6 border-l-4 border-l-teal-500 dark:border-l-teal-400">
+            <h3 class="font-bold text-lg">
+              Software Engineer @ Avionics Test and Analysis Corporation
+            </h3>
+            <p class="text-sm text-stone-500 dark:text-stone-400 mt-1">2010 - 2022</p>
+            <ul class="mt-3 space-y-2 text-stone-700 dark:text-stone-300 list-disc pl-5">
+              <li>
+                Built Visual Studio Code plugin for a telemetry configuration format
+                (TMATS).
+              </li>
+              <li>
+                Developed software to simulate F-16 pilot interface for lab testing
+                missile prototypes.
+              </li>
+              <li>Served as Security Manager for classified systems.</li>
+              <li>
+                Developed open-source libraries and tools for parsing binary data in
+                Python and C.
+              </li>
+              <li>Wrote weather data visualization tool for C5 radar logs.</li>
+              <li>
+                Rewrote and customized QML (Qt) and Javascript code for F-16 test
+                program.
+              </li>
+              <li>
+                Containerized multiple legacy and prototype software applications.
+              </li>
+              <li>
+                Presented several technical papers at industry conferences on
+                open-source software and containerization.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Independent -->
+          <div class="bg-white dark:bg-stone-800/50 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700/50 p-6 border-l-4 border-l-teal-500 dark:border-l-teal-400">
+            <h3 class="font-bold text-lg">
+              Independent Full Stack Developer & Author
+            </h3>
+            <p class="text-sm text-stone-500 dark:text-stone-400 mt-1">2005 - Present</p>
+            <ul class="mt-3 space-y-2 text-stone-700 dark:text-stone-300 list-disc pl-5">
+              <li>
+                Built various new and updated websites for direct contracts and web
+                firms.
+              </li>
+              <li>
+                Wrote and consulted on multiple articles including one published on
+                linux.com and a book on android development with python.
+              </li>
+              <li>
+                Developed neighborhood watch software to deliver law enforcement
+                alerts via text message (SMS).
+              </li>
+              <li>
+                Developed iPad app for building floorplan layouts for print services
+                company.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
     </div>
   </main>
 </Layout>
