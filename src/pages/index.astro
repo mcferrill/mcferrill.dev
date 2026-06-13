@@ -6,10 +6,10 @@ import Layout from "../layouts/Layout.astro";
   <main class="max-w-6xl mx-auto min-h-screen lg:flex">
     <!-- Sidebar -->
     <aside
-      class="bg-stone-50 dark:bg-stone-900/50 lg:min-h-screen lg:w-80 lg:shrink-0 lg:sticky lg:top-0 text-center p-8 lg:p-10 flex flex-col items-center"
+      class="bg-stone-50 dark:bg-stone-800/40 lg:min-h-screen lg:w-80 lg:shrink-0 lg:sticky lg:top-0 text-center p-8 lg:p-10 flex flex-col items-center"
     >
       <img
-        class="block rounded-full mx-auto w-32 h-32 lg:w-56 lg:h-56 object-cover shadow-lg ring-2 ring-teal-100 dark:ring-teal-900 transition-transform hover:scale-[1.02]"
+        class="block rounded-full mx-auto w-32 h-32 lg:w-56 lg:h-56 object-cover shadow-lg ring-2 ring-blue-lighter dark:ring-blue-dark transition-transform hover:scale-[1.02]"
         alt=""
         width={250}
         height={250}
@@ -24,7 +24,7 @@ import Layout from "../layouts/Layout.astro";
         <a
           href="https://github.com/mcferrill"
           title="GitHub"
-          class="text-stone-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+          class="text-stone-400 hover:text-blue transition-colors"
         >
           <img
             width={32}
@@ -37,7 +37,7 @@ import Layout from "../layouts/Layout.astro";
         <a
           href="https://www.linkedin.com/in/mcferrill/"
           title="LinkedIn"
-          class="text-stone-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+          class="text-stone-400 hover:text-blue transition-colors"
         >
           <img
             width={32}
@@ -50,7 +50,7 @@ import Layout from "../layouts/Layout.astro";
         <a
           href="https://twitter.com/mcferrill"
           title="Twitter"
-          class="text-stone-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+          class="text-stone-400 hover:text-blue transition-colors"
         >
           <img
             width={32}
@@ -68,26 +68,26 @@ import Layout from "../layouts/Layout.astro";
 
       <!-- Expertise -->
       <section>
-        <h2 class="text-2xl font-bold mb-4 text-teal-600 dark:text-teal-400">
+        <h2 class="text-2xl font-bold mb-4 text-blue">
           Expertise
         </h2>
         <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+          <span class="px-3 py-1.5 bg-blue-lighter dark:bg-blue-light text-blue-dark text-sm font-medium rounded-full">
             Python (Django, Flask, scipy)
           </span>
-          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+          <span class="px-3 py-1.5 bg-blue-lighter dark:bg-blue-light text-blue-dark text-sm font-medium rounded-full">
             Javascript (React, React-Native/Expo, Nodejs, Vue, jQuery)
           </span>
-          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+          <span class="px-3 py-1.5 bg-blue-lighter dark:bg-blue-light text-blue-dark text-sm font-medium rounded-full">
             Modern software tooling (Docker, Git, CI/CD)
           </span>
-          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+          <span class="px-3 py-1.5 bg-blue-lighter dark:bg-blue-light text-blue-dark text-sm font-medium rounded-full">
             Web Development (HTML, CSS, Tailwind, Less, SASS)
           </span>
-          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+          <span class="px-3 py-1.5 bg-blue-lighter dark:bg-blue-light text-blue-dark text-sm font-medium rounded-full">
             Library development (in Python, C/C++, C#)
           </span>
-          <span class="px-3 py-1.5 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm font-medium rounded-full">
+          <span class="px-3 py-1.5 bg-blue-lighter dark:bg-blue-light text-blue-dark text-sm font-medium rounded-full">
             Cybersecurity (Security+)
           </span>
         </div>
@@ -95,13 +95,13 @@ import Layout from "../layouts/Layout.astro";
 
       <!-- Work History -->
       <section>
-        <h2 class="text-2xl font-bold mb-6 text-teal-600 dark:text-teal-400">
+        <h2 class="text-2xl font-bold mb-6 text-blue">
           Relevant Work History
         </h2>
         <div class="space-y-6">
 
           <!-- FiveQ -->
-          <div class="bg-white dark:bg-stone-800/50 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700/50 p-6 border-l-4 border-l-teal-500 dark:border-l-teal-400">
+          <div class="bg-white dark:bg-stone-800/50 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700/50 p-6 border-l-4 border-l-blue">
             <h3 class="font-bold text-lg">Software Engineer @ FiveQ</h3>
             <p class="text-sm text-stone-500 dark:text-stone-400 mt-1">2022 - present</p>
             <ul class="mt-3 space-y-2 text-stone-700 dark:text-stone-300 list-disc pl-5">
@@ -122,7 +122,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
 
           <!-- Avionics -->
-          <div class="bg-white dark:bg-stone-800/50 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700/50 p-6 border-l-4 border-l-teal-500 dark:border-l-teal-400">
+          <div class="bg-white dark:bg-stone-800/50 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700/50 p-6 border-l-4 border-l-blue">
             <h3 class="font-bold text-lg">
               Software Engineer @ Avionics Test and Analysis Corporation
             </h3>
@@ -157,7 +157,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
 
           <!-- Independent -->
-          <div class="bg-white dark:bg-stone-800/50 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700/50 p-6 border-l-4 border-l-teal-500 dark:border-l-teal-400">
+          <div class="bg-white dark:bg-stone-800/50 rounded-xl shadow-sm border border-stone-200 dark:border-stone-700/50 p-6 border-l-4 border-l-blue">
             <h3 class="font-bold text-lg">
               Independent Full Stack Developer & Author
             </h3>

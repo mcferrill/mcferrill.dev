@@ -2,6 +2,26 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-blue: var(--blue);
+  --color-blue-light: var(--blue-light);
+  --color-blue-dark: var(--blue-dark);
+  --color-blue-lighter: var(--blue-lighter);
+}
+
+:root {
+  --blue: #1e6b9e;
+  --blue-light: #cde0f0;
+  --blue-dark: #143c5c;
+  --blue-lighter: #e8f0f8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blue: #5b9fd4;
+    --blue-light: rgba(30, 107, 158, 0.2);
+    --blue-dark: #8fc0e0;
+    --blue-lighter: rgba(30, 107, 158, 0.1);
+  }
 }
 
 html {
