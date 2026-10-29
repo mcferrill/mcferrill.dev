@@ -11,11 +11,8 @@
     "@types/node": "^20",
     "typescript": "^5"
   },
-  "overrides": {
-    "vite": "^7"
-  },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.1",
-    "astro": "^6.4.6"
+    "astro": "^7.4.4"
   }
 }
